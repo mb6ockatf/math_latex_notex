@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\title{My Shool Algebra Notes}
+\author{@mb6ockatf}
+\date{\today}
+
+\newenvironment{conditions}
+	{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}}
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Solving Equations in Integers}
+\begin{equation}
+	ax + by = c
+\end{equation}
+Where $a$, $b$, $c$ $\in\mathbb{Z}$.\\
+If $a$ and $b$ are mutually prime numbers, then this equation has at least one
+solution in integers $(\in\mathbb{Z})$. Otherwise, there are no solutions in
+integers.\\
+If $a$ and $b$ are mutually prime numbers, then there is an infinite
+number of solutions $\in\mathbb{Z}$ that can be calculated by formulas:
+\begin{equation}
+	x = \alpha + bt; \quad y = \beta + at
+\end{equation}
+Where:
+\begin{conditions}
+	\alpha, \beta & solutions of this equation $\in\mathbb{Z}$\\
+	t & random number\\
+\end{conditions}
+
+
+\section{Progressions}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+&Arithmetic Progression & Geometric Progression\\ \hline
+Common term formula & $a_n = a_1 + (n - 1)d$ & $b_n = b_1 \cdot q^{n - 1}$\\ \hline
+Characteristic Property & $a_n = \frac{a_{n-1}+a_{n+1}}{2}$, $n > 1$ &
+	$b_n^2 = b_{n-1} \cdot b_{n+1}$, $n > 1$ \\ \hline
+Sum of $n$ first numbers & $S_n = \frac{a_1 + a_n}{2} \cdot n$; &
+	$S_n = \frac{b_1(1-q^n)}{1 - q}$, $q \neq 1$\\
+
+& $S_n = \frac{2a_1 + (n - 1)d}{2} * n$ &
+	$S_n = \frac{b_n q - b_1}{q - 1}$, $q \neq 1$ \\ \hline
+\end{tabular}
+\end{center}
+
+\section{Divisibility}
+\begin{itemize}
+	\item[By 2:] Number must be even
+	\item[By 3:] $\sum_{\text{digits}} \quad \vdots \quad 3$
+	\item[By 4:] $n \equiv 0 \pmod{100} \quad \text{or} \quad (n \bmod{100})
+		\quad\vdots\quad 4$
+	\item[By 5:] $n \equiv 0 \text{ or } 5 \pmod{10}$
+	\item[By 6:] $n \equiv 0 \pmod{2} \text{ and } n \equiv 0 \pmod{3}$
+	\item[By 7:] $\left(\lfloor\dfrac{n}{10}\rfloor \times 3 +
+		\text{last digit of } n\right) \equiv 0 \pmod{7}$
+	\item[By 8:] $n \equiv 0 \pmod{1000} \quad \text{or} \quad
+		(n \bmod 1000) \quad \vdots \quad 0 \pmod{8}$
+	\item[By 9:] $\sum_{\text{digits}} \quad \vdots \quad 0 \pmod{9}$
+	\item[By 10:] $n \quad \vdots \quad 0 \pmod{10}$
+	\item[By 11:] $\sum_{\text{digits on even positions}} = 
+		\sum_{\text{digits on odd positions}}$
+	\item[By 12:] $n \quad \vdots \quad 0 \pmod{3} \text{ and }
+		n \quad \vdots \quad 0 \pmod{4}$
+	\item[By 13:] $\left(\lfloor\dfrac{n}{10}\rfloor +
+		(n \bmod 10) \cdot 3\right) \equiv 0 \pmod{13}$
+\end{itemize}
+\end{document}
