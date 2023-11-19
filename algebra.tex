@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -55,7 +55,7 @@ Sum of $n$ first numbers & $S_n = \frac{a_1 + a_n}{2} \cdot n$; &
 
 \section{Divisibility}
 \begin{itemize}
-	\item[By 2:] Number must be even
+	\item[By 2:] $n \quad \vdots \quad 0 \pmod{2}$
 	\item[By 3:] $\sum_{\text{digits}} \quad \vdots \quad 3$
 	\item[By 4:] $n \equiv 0 \pmod{100} \quad \text{or} \quad (n \bmod{100})
 		\quad\vdots\quad 4$
@@ -71,7 +71,6 @@ Sum of $n$ first numbers & $S_n = \frac{a_1 + a_n}{2} \cdot n$; &
 		\sum_{\text{digits on odd positions}}$
 	\item[By 12:] $n \quad \vdots \quad 0 \pmod{3} \text{ and }
 		n \quad \vdots \quad 0 \pmod{4}$
-	\item[By 13:] $\left(\lfloor\dfrac{n}{10}\rfloor +
-		(n \bmod 10) \cdot 3\right) \equiv 0 \pmod{13}$
+	\item[By 13:] $\left(\lfloor\dfrac{n}{1000}\rfloor - n \bmod{1000}\right) \quad \vdots \quad 0 \pmod{13}$
 \end{itemize}
 \end{document}
