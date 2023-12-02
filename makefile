@@ -2,6 +2,7 @@
 
 g: pdf_geometry
 a: pdf_algebra
+c: pdf_chemistry
 
 pdf_geometry:
 	pdflatex geometry.tex
@@ -9,4 +10,7 @@ pdf_geometry:
 pdf_algebra:
 	pdflatex algebra.tex
 
-build: pdf_geometry pdf_algebra
+pdf_chemistry:
+	pdflatex chemistry.tex
+
+build: pdf_geometry pdf_algebra pdf_chemistry
