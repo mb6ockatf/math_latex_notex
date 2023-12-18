@@ -14,15 +14,24 @@ for figure needed for proof.
 Has been used it Atanasyan's geometry students' book
 
 = By Triangles Similiarity
-Shown in Kiselev's geometry students' book.
+Shown in Kiselev's geometry students' book. Put the height from 90#sym.degree
+angle onto the hypotenuse, and the resulting 2 triangles are similar to the
+larger one. Then do the fractions, and you will get the final equation.
 
 = By Angle's cos
 
 = Garfield Proof 1882
+#align(right)[
+	#figure(
+	  image("images/garfield.jpg", width: 20%),
+	  caption: [ James Garfield's proof],
+	)
+]
 
 = The Oldest Proof
-Was first mentioned in work of Bhāskara II
+Was first mentioned in work of Bhāskara II. Literally, the wierdest one.
 
 = Hawkins' Proof
 
 = Gofman's Proof
+
